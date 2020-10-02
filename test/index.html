@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+  <input type="text" id="novo" placeholder="insira um item"> </input>
+
+  <form >
+    Selecione:
+    <br>
+  <select id="Select" size="4" multiple></select>
+</form>
+  <button onclick="adicionar()">inserir</button>
+
+
+  <button onclick="remove()">remove</button>
+
+  <script>
+
+    function remove() {
+      var x = document.getElementById("Select");
+     x.remove(x.selectedIndex)
+    }
+
+    function adicionar() {
+      var select = document.getElementById("Select");
+      var option = document.createElement("option");
+      var texto = document.getElementById("novo");
+      option.textContent = texto.value
+      texto.value = "";
+      texto.focus();
+      option.setAttribute("id", "texto");
+      select.appendChild(option);
+
+    }
+
+
+    
+  </script>
+
+</body>
+
+</html>
+
+
+</body>
+
+</html>

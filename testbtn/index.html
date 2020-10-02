@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .content {
+        max-width: 400px;
+        max-height: 600px;
+        margin: auto;
+        background: #7a7a7a;
+        height: 500px;
+        padding: 5%;
+        border: 2px solid;
+      }
+      .content h1 {
+        text-align: center;
+      }
+      input[type="text"] {
+        width: 80%;
+        height: 30px;
+        margin-bottom: 10px;
+      }
+      input[type="button"] {
+        border: none;
+        max-width: 17%;
+        float: right;
+        height: 35px;
+      }
+      button:hover,
+      input[type="button"]:hover {
+        background: #452a2a;
+      }
+      button,
+      input[type="button"] {
+        cursor: pointer;
+      }
+      button {
+        float: right;
+        width: 25px;
+        padding: 5px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 10px;
+        height: 350px;
+        background: #fff;
+        overflow-y: auto;
+      }
+      li {
+        height: 30px;
+        margin: 10px;
+        border: 2px solid;
+      }
+    </style>
+    <title>TESTs</title>
+  </head>
+  <body>
+    <div class="content">
+     
+        <div class="">
+          <h1>TestBoxList</h1>
+          <form>
+            <input type="text" id="adiciona" placeholder="insira um item" />
+            <input type="button" value="adicionar" onclick="add()" />
+          </form>
+        </div>
+         <div class="">
+            <ul id="List"></ul>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
